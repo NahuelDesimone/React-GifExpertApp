@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+import '@testing-library/jest-dom'
 
 export const AddCategory = ({ setCategories }) => {
 
-    const [inputValue, setinputValue] = useState("Hola mundo"); //Como estado inicial declaro un string vacio
+    const [inputValue, setinputValue] = useState(""); //Como estado inicial declaro un string vacio
 
     const handleInputChange = (e) => {
         setinputValue(e.target.value);
@@ -22,6 +23,7 @@ export const AddCategory = ({ setCategories }) => {
     }
     return (
         <form onSubmit={handleSubmit}>
+            <p>{ inputValue }</p>
             <input
                 type="text"
                 value={inputValue}
