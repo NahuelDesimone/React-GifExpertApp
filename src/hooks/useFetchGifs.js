@@ -21,8 +21,5 @@ export const useFetchGifs = (category) => {
 
     }, [category])
 
-    console.log(state.data);
-
-
     return state;
 }

@@ -37,6 +37,12 @@ exports[`Pruebas en el componente GifGrid debe de mostrar items cuando se cargan
         title="Cualquier cosa"
         url="https://localhost/cualquier/cosa.jpg"
       />
+      <GifGridItem
+        id="123"
+        key="123"
+        title="Cualquier cosa"
+        url="https://localhost/cualquier/cosa.jpg"
+      />
     </ol>
   </div>
 </Fragment>
